@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values. We used Dom manipulation to get HTML elements
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = document.getElementById('personalMessage') ;
-      const courseNameInput = document.getElementById ('courseName') ; 
+      const personalMessageInput = document.getElementById('personalMessage');
+      const courseNameInput = document.getElementById ('courseName'); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
@@ -25,8 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
-      <h3>${studentName}</h3>
+      certificateContent.innerHTML = `
+      <h3>This is to certify that ${studentName}</h3>
+      <p>has almost completed<p>${courseName}</p>
+      <img src="logo.png">
+      <p>${personalMessage}</p>
     `;
     
       //  Display the modal
