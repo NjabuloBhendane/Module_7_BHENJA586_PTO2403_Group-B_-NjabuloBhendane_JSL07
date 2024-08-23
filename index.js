@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     cardForm.addEventListener('submit', function (e) {
       e.preventDefault();
   
-      // 🚨 Get input values
+      // 🚨 Get input values. We used Dom manipulation to get HTML elements
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage') ;
+      const courseNameInput = document.getElementById ('courseName') ; 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
