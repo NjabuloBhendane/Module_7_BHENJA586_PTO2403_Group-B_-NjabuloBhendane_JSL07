@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
       certificateContent.innerHTML = `
       <h3>This is to certify that ${studentName}</h3>
       <p>has almost completed<p>${courseName}</p>
-      <img src="logo.png">
       <p>${personalMessage}</p>
     `;
+    
     
       //  Display the modal
       modal.style.display = 'block';
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('', function () {
-      
+    closeModal.addEventListener('click', function () {
+      modal.style.display ='none';
     });
   });
   
